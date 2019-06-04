@@ -10,7 +10,7 @@ if [[ $(command -v brew) == "" ]]; then
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 echo "Setting up Homebrew..."
-curl <INSERT_RAW_LINK_HERE> -o $HOME/Brewfile
+curl https://raw.githubusercontent.com/AChris07/brew-config/master/Brewfile -o $HOME/Brewfile
 brew bundle
 rm -fr $HOME/Brewfile
 echo "Homebrew is ready!"

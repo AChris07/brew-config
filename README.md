@@ -4,6 +4,11 @@ This repo contains a quickstart setup to install Homebrew and set up all the app
 The idea is to use this to serve a new machine to quickly get started to work. Feel free to adjust and use it for yourself!
 
 To get started, you can use the following install script using **cUrl**:
-`curl -o- <INSERT RAW LINK HERE> | bash`
+```
+curl -o- https://raw.githubusercontent.com/AChris07/brew-config/master/install.sh | bash
+```
+
 or **wget**:
-`wget -qO- <INSERT RAW LINK HERE> | bash`
+```
+wget -qO- https://raw.githubusercontent.com/AChris07/brew-config/master/install.sh | bash
+```
