@@ -6,8 +6,8 @@ if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
 fi
 
 if [[ $(command -v brew) == "" ]]; then 
-		echo "Installing Homebrew.. "
-		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo "Installing Homebrew.. "
+  bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 echo "Setting up Homebrew..."
 curl https://raw.githubusercontent.com/AChris07/brew-config/master/Brewfile -o $HOME/Brewfile
